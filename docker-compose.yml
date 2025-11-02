@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  canara_app:
+    image: meesho_image
+    container_name: meesho_container
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
